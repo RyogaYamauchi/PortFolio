@@ -1,0 +1,133 @@
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="./css/materialize.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="./css/index.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+</body>
+
+</html>
+
+<nav class="light-red lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo">Potforio</a>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="about.html">About</a></li>
+            <li><a href="work.html">work </a></li>
+            <li><a href="skill.html">skill</a></li>
+            <li>Yamauchi Ryoga</li>
+
+        </ul>
+
+        <ul id="nav-mobile" class="sidenav">
+            <li><a href="#">Navbar Link</a></li>
+        </ul>
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+</nav>
+
+<div class="main">
+    <p></p>
+    <div class="center">
+        <img height="20%" src="images/unity.png">
+        <div class="row-center">
+            <div class="container">
+
+                <div class="center">
+                    <p>
+                        Unityは一番よく使えるゲームエンジンです。
+                        C#で記述しており、基本的なデザインパターンはかけます。
+                        Linqを用いたラムダ式、Action、delegateなどの基本的な言語仕様部分での記述から、テストがかけたり、非同期まわりのコードもある程度かけます。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="center">
+        <img height="50%" src="images/clean.jpeg">
+    </div>
+    <div class="row-center">
+        <div class="container">
+
+            <div class="center">
+                <p>
+                    Unityで開発する場合はClean Archetectureを使ってゲームロジック部分と描画部分を大まかに分けています。
+                    メリットとして異なるレイヤーで機能を書くことができるので、テストを簡単にかけます。
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="center">
+        <img height="20%" src="images/zenject.png">
+    </div>
+    <div class="row-center">
+        <div class="container">
+            <div class="center">
+                <p>
+                    ZenjectはUnityでDIを実現するライブラリです。Zenjectで解決できる問題は基本的に実装できます。
+                    サンプルで全体のデータを管理するStateなクラスやそれぞれのPresenterなどを、Injectする例です。
+                    ZenjectのDIContainerクラスにクラスをBindすることで裏でDictionaryとしてクラスを紐付け、
+                    InjectアトリビュートでインジェクションすることでそのDictionaryからインスタンスを呼び出すことができます。
+                </p>
+                <p><a
+                        href="https://github.com/RyogaYamauchi/supporters_sample">https://github.com/RyogaYamauchi/supporters_sample</a>
+                </p>
+
+            </div>
+        </div>
+    </div>
+    <div class="center">
+        <img height="20%" src="images/unirx.jpeg">
+    </div>
+    <div class="row-center">
+        <div class="container">
+            <div class="center">
+                <p>
+                    UnityでRxを実現するライブラリです。主にRx的な使い方をする場合もありますが、導入コストなどからアプリケーションレイヤーやドメインレイヤーで管理しているデータをIReadOnlyReactivePropertyでPresentationレイヤーにわたし、PresenterでSubsctibeすることでView
+                    間のデータ受け渡しを実現する使い方をしています。
+                </p>
+                <p><a href="                https://github.com/RyogaYamauchi/Competition_2019/blob/master/Assets/Scripts/Main/Views/PlayerView.cs
+                    "> https://github.com/RyogaYamauchi/Competition_2019/blob/master/Assets/Scripts/Main/Views/PlayerView.cs
+                    </a></p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<footer class="page-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <h5 class="white-text">Footer Content</h5>
+                <p class="grey-text text-lighten-4">　<a href="https://www.happyelements.co.jp">HappyElements K.K.</a>
+                </p>
+                <p class="grey-text text-lighten-4">　<a href="https://www.kyoto-su.ac.jp">京都産業大学</a></p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                    <li><a class="grey-text text-lighten-3" href="#https://twitter.com/yamauchi_ryoga">Twitter</a></li>
+                    <li><a class="grey-text text-lighten-3"> Gmail : g1854003@gmail.com</a></li>
+                    <li><a class="grey-text text-lighten-3">Tell : 09090446797</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            © 2020 Copyright Yamauchi Ryoga
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+        </div>
+    </div>
+</footer>
